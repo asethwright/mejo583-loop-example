@@ -1,0 +1,19 @@
+li {
+  text-decoration: line-through;
+}
+
+.favorite-person {
+  text-decoration: none;
+}
+
+.person {
+  color: red;
+}
+
+.btn {
+  border: 1px solid #ccc;
+  padding: 18px 30px;
+  font-size: 20px;
+  border-radius: 2px;
+  display: inline-block;
+}

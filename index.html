@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Loops Example</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="app">
+    <ul>
+      <li v-for="(person, index) in people" :class="{ 'favorite-person': person.favorite, 'person': index < 3 }">{{ index + 1 }}. {{ sayName(person) }}</li>
+    </ul>
+    <input type="text" v-model="firstNameInputValue" />
+    <input type="text" v-model="lastNameInputValue" />
+    <input type="checkbox" v-model="favoriteInputValue" />
+    <div class="btn" @click="addName">Add</div>
+  </div>
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
